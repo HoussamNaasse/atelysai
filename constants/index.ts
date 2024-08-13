@@ -1,33 +1,38 @@
 export const navLinks = [
     {
-      label: "Home",
+      label: "Accueil",
       route: "/",
       icon: "/assets/icons/home.svg",
     },
     {
-      label: "Image Restore",
-      route: "/transformations/add/restore",
+      label: "Information commerciale",
+      route: "/transformations/add/informations_commerciales",
       icon: "/assets/icons/image.svg",
     },
     {
-      label: "Generative Fill",
-      route: "/transformations/add/fill",
+      label: "Prise de rendez-vous",
+      route: "/transformations/add/rdv",
       icon: "/assets/icons/stars.svg",
     },
     {
-      label: "Object Remove",
-      route: "/transformations/add/remove",
+      label: "Mise en relation",
+      route: "/transformations/add/mise_en_relation",
       icon: "/assets/icons/scan.svg",
     },
     {
-      label: "Object Recolor",
-      route: "/transformations/add/recolor",
+      label: "Service après-vente",
+      route: "/transformations/add/sav",
       icon: "/assets/icons/filter.svg",
     },
     {
-      label: "Background Remove",
-      route: "/transformations/add/removeBackground",
+      label: "Prise de commande",
+      route: "/transformations/add/prise_commande",
       icon: "/assets/icons/camera.svg",
+    },
+    {
+      label: "Réclamations",
+      route: "/transformations/add/reclamations",
+      icon: "/assets/icons/reclamation.svg",
     },
     {
       label: "Profile",
@@ -35,7 +40,7 @@ export const navLinks = [
       icon: "/assets/icons/profile.svg",
     },
     {
-      label: "Buy Credits",
+      label: "Abonnements",
       route: "/credits",
       icon: "/assets/icons/bag.svg",
     },
