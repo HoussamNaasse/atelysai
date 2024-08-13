@@ -15,7 +15,7 @@ const Sidebar = () => {
     <aside className="sidebar">
         <div className="flex size-full flex-col gap-4">
             <Link href="/" className="sidebar-logo">
-            <Image src="/assets/images/atelys-ai-high-resolution-logo-transparent.png" alt="logo" width={220} height={28}/>
+            <Image src="/assets/images/atelysLogo.png" alt="logo" width={220} height={28}/>
             </Link>
 
             <nav className="sidebar-nav">
