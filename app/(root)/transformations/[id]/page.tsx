@@ -1,8 +1,10 @@
-import React from 'react'
+"use client"
+import { useSearchParams } from 'next/navigation'
+import React, { useEffect } from 'react'
 
 const TransformationsPage = () => {
   return (
-    <div>TransformationsPage</div>
+    <div>TransformationsPage </div>
   )
 }
 

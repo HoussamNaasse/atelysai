@@ -1,14 +1,17 @@
-import React from 'react'
+"use client"
+import Chat from '@/components/shared/Chat'
+import Header from '@/components/shared/Header'
 
-const AddTransformationtypePage = () => {
+
+const AddTransformationtypePage = ({ params: { type } }: SearchParamProps) => {
+
   return (
     <div>
-      <h2>inormation commerciale</h2>
-      <h2>prise de rendez-vous</h2>
-      <h2>mise en relation</h2>
-      <h2>service apres vente</h2>
-      <h2>prise de commande</h2>
-      <h2>reclamation</h2>
+      <Header 
+        title="Réclamation" 
+        subtitle=""
+      />
+      <Chat />
     </div>
   )
 }

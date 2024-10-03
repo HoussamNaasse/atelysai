@@ -1,0 +1,54 @@
+
+    // const handleSend = async () => {
+    //     if (input.trim() !== "") {
+    //         // Ajoute un message comme étant "envoyé"
+    //         setMessages([...messages, { text: input, type: "sent" }]);
+    //         setInput("");
+
+    //         const response = await axios.get('http://localhost:3010/getsession')
+            
+    //         if (response.status == 200) {
+    //             const sessionId = response.data.session_id
+
+    //             const body = {
+    //                 "sendmessage": {
+    //                     "sessionID": sessionId,
+    //                     "message_type": "text",
+    //                     "text": ""
+    //                 }
+    //             }
+    //             const welcomeMessageResponse = await axios.post('http://localhost:3010/sendmessage', body);
+                
+    //             if (messages.length == 0) {
+    //                 const welcomeMessage = welcomeMessageResponse.data.output.generic[0].text
+    //                 setMessages(messages => [...messages, { text: welcomeMessage, type: "received" }]);
+    //             }
+
+            
+    //             const realBody = {
+    //                 "sendmessage": {
+    //                     "sessionID": sessionId,
+    //                     "message_type": "text",
+    //                     "text": input
+    //                 }
+    //             }
+    
+    //             const messageResponse = await axios.post('http://localhost:3010/sendmessage', realBody);
+                
+    //             const message = messageResponse.data.output.generic[0].text
+
+    //             setMessages(messages => [...messages, { text: message, type: "received" }]);
+
+    //             // const addResponse = await ChatMessage.create({
+    //             //     sessionsID: sessionId,
+    //             //     message_type: "text",
+    //             //     text: input,
+    //             //     response: message
+    //             // })
+
+    //             // console.log(addResponse)
+    //         }
+            
+
+    //     }
+    // };

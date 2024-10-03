@@ -14,8 +14,8 @@ const ChatSchema = new Schema({
     text: {type: String},
     response: {type: String}
 });
-const Chat = models?.Chat || model('Chat', ChatSchema);
+const ChatMessage = models?.Chat || model('ChatMessage', ChatSchema);
 
 
-export default Chat;
+export default ChatMessage;
 
