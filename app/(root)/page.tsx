@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { Bar, Line, Pie } from "react-chartjs-2"; // Import different chart components
 import {
   Chart as ChartJS,
@@ -44,7 +44,7 @@ const chartData = [
       datasets: [
         {
           label: "Modules les plus utilisée",
-          data: [15, 44, 18,38, 5],
+          data: [15, 44, 18, 38, 5],
           backgroundColor: "rgba(54, 162, 235, 0.5)",
         },
       ],
@@ -77,19 +77,6 @@ const chartData = [
       ],
     },
   },
-  // {
-  //   type: "bar",
-  //   data: {
-  //     labels: ["Q1", "Q2", "Q3", "Q4"],
-  //     datasets: [
-  //       {
-  //         label: "Push vs Pull par jour ",
-  //         data: [85, 72, 93, 88],
-  //         backgroundColor: "rgba(255, 159, 64, 0.5)",
-  //       },
-  //     ],
-  //   },
-  // },
 ];
 
 // Carousel Component for Cards Only (Horizontal Scroll)
@@ -104,7 +91,6 @@ const CardCarousel = () => {
           >
             <h2 className="text-2xl font-bold mb-4">{item.title}</h2>
             <p className="text-gray-600">{item.description}</p>
-
           </div>
         ))}
       </div>
@@ -132,7 +118,7 @@ const chartOptions = {
   responsive: true,
   plugins: {
     legend: {
-      position: "top",
+      position: "top", // Correct usage of 'position'
     },
     title: {
       display: true,
